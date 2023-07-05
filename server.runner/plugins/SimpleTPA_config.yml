@@ -1,0 +1,161 @@
+#  ____    _                       _          _____
+# / ___|  (_)  _ __ ___    _ __   | |   ___  |_   _|  _ __     __ _
+# \___ \  | | | '_ ` _ \  | '_ \  | |  / _ \   | |   | '_ \   / _` |
+#  ___) | | | | | | | | | | |_) | | | |  __/   | |   | |_) | | (_| |
+# |____/  |_| |_| |_| |_| | .__/  |_|  \___|   |_|   | .__/   \__,_|
+#                         |_|                        |_|
+
+# 可用变量: %time% | %player% | %option%
+
+
+# !!!!!!!!!!!!!!!!
+# 这项设置将监听所有插件的传送功能
+# 如果你想让SimpleTpa记录其他插件传送时的位置, 请设置为 true (如果没有其他传送插件请设置为 false )
+enable-teleport-logging: false
+# !!!!!!!!!!!!!!!!
+
+#是否关闭插件前缀
+disable-prefix: false
+#前缀设置
+prefix: "&8[&6!&8]&r"
+
+## 信息设置
+# 若要关闭消息显示请填 none
+# 举个例子:
+# Console-Isnt-Player: "none"
+Console-Isnt-Player: "&c后台无法使用!"
+Disabled-World-Message: "&c无法在这个世界发送传送请求!"
+Teleport-Message: "&f您将在 &e%time% &f秒后传送至目标附近..."
+Teleport-Message-Back-To-Player: "&f您接受了玩家的传送请求!"
+Player-Is-Null: "&c玩家不在线!"
+Player-Doesnt-Have-Back-Point: "&c无法返回到上个位置!"
+Player-Doesnt-Have-Back-Point-1: "&c无法返回到上个位置!"
+Cooldown-Message: "&c冷却中! 请等待 &e%time% &c秒后再使用!"
+Death-Message: "&f输入 &9/back &f返回到死亡点..."
+Teleport-Message-Back-To-Sender-TPHEREALL: "&f已向所有在线玩家发送了传送请求..."
+No-Permission-Message: "&c您没有权限!"
+TpaToggle-Deactivated-Player-2: "&d%player% &c暂时关闭了您的任何传送请求!"
+TpaToggle-Activated-Player-2: "&d%player% &a现在可以收到您的传送请求了!"
+TpaToggle-Deactivated-Player: "&f您永久地关闭了 &d%player% &f发出的传送请求!"
+TpaToggle-Activated-Player: "&f您现在可以收到 &d%player% &f发出的传送请求了!"
+TpaToggle-Deactivated: "&f您现在无法接收到任何传送请求!"
+TpaToggle-Activated: "&f您现在可以接收到玩家的传送请求了!"
+TpaToggled-Player-Message: "&c您无法向他发起传送请求, 该玩家关闭了传送请求!"
+Player-Is-Player: "&c无法向自己发送传送请求!"
+Already-A-TP-Request: "&f已向该玩家发送过传送请求了, 输入 &9/tpcancel <玩家ID> &f以取消传送!"
+Tpa-Usage-Message: "&f请输入 &9/tpa <玩家ID> &f发送传送请求!"
+Timed-Out-Message: "&c您发送的传送请求超时了!"
+Sending-Teleport-Request: "&f已向 &d%player% &f发送传送请求, 输入 &9/tpcancel <玩家ID> &f以取消传送!"
+Accept-Message: "&f输入 &a/tpaccept &f以接受该玩家的传送请求."
+Deny-Message: "&f输入 &c/tpdeny &f以拒绝该玩家的传送请求."
+Sent-Request-On-You: "&d%player% &f向您发送了一个传送请求!"
+Timed-Out-Here-Message: "&6您发送的传送邀请超时了!"
+Sending-Teleport-Here-Request: "&f已向 &d%player% &f发出传送邀请, 输入 &9/tpcancel <玩家ID> &f以取消邀请!"
+Sent-Here-Request-On-You: "&d%player% &f想邀请您到他的位置!"
+Already-A-TPHere-Request: "&f已向该玩家发出过传送邀请了, 输入 &9/tpcancel <玩家ID> &f以取消邀请!"
+Tpa-Here-Usage-Message: "&f请输入 &9/tpahere <玩家ID> &f发出传送邀请!"
+No-Teleport-Requests: "&c没有任何玩家向您发送传送请求!"
+Invalid-Player: "&c向您发送传送请求的玩家好像离开了服务器..."
+Teleport-Message-Back-To-Sender: "&d%player% &a接受了您的传送请求!"
+Teleported-Message: "&f传送中..."
+Move-Cancel-Message: "&c传送过程中请勿移动, 已取消此次传送请求..."
+Rejected-Sender: "&c玩家拒绝了您的传送请求!"
+Rejected-Message: "&f您拒绝了此次传送请求!"
+Player-Is-In-Disabled-World: "&c该玩家所处世界无法发送传送请求..."
+Tpcancel-Usage-Message: "&f请输入 &9/tpcancel <玩家ID> &f以取消传送请求!"
+Error-Cancelling-Request: "&c您无法取消这次的传送请求!"
+Request-Cancelled: "&f已取消传送请求!"
+Death-Message-Coords: "&f死亡地点: &d%coords%"
+Time-Left: "&f您有 &e%seconds% &f秒来接受或拒绝传送请求..."
+Damaged-Cancel-Message: "&c传送过程中受到伤害, 已取消此次传送请求!"
+Different-Gamemode: "&c观察者模式下无法使用传送指令!"
+World-Doesnt-Exists-Or-Unloaded: "&c世界不存在, 无法进行传送!"
+
+#可用的颜色列表 https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
+#可用的音效列表 https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+#可用的粒子效果列表: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+
+## 粒子与音效设置
+# 传送时的音效
+Sound-Name: "ENTITY_EXPERIENCE_ORB_PICKUP"
+# 传送时的粒子
+Particle-Name: "EXPLOSION_NORMAL"
+
+## 按钮设置
+# 聊天框接受按钮设置
+Accept-Button: "              接受"
+Accept-Button-Color: "GREEN"
+Accept-Button-Set-Bold: false
+Accept-Button-Description: "&f点击 &a接受 &f传送请求!"
+
+# 聊天框接受/拒绝分割线设置
+Middle-Button: " | "
+Middle-Button-Color: "GRAY"
+Middle-Button-Set-Bold: false
+Middle-Button-Description: "&7 <- 请选择 -> "
+
+# 聊天框拒绝按钮设置
+Deny-Button: "拒绝"
+Deny-Button-Color: "RED"
+Deny-Button-Set-Bold: false
+Deny-Button-Description: "&f点击 &c拒绝 &f传送请求!"
+
+# 列出的世界将无法使用此插件的指令
+disabled-worlds:
+  - 'disabledworld'
+
+## 返回相关设置(全部填 true 关闭返回功能)
+# true - 关闭
+# false - 开启
+
+# 是否关闭返回指令
+disable-back-command: false
+
+# 是否关闭死亡地点消息记录
+disable-coords-message: true
+
+# 是否关闭返回到死亡地点
+disable-back-on-death: false
+
+# 是否关闭返回到传送前的位置
+disable-back-on-tp: false
+
+## 其他设置
+#  是否关闭游戏模式检测(观察者模式无法使用插件指令)
+disable-gamemode-check: false
+#  是否关闭聊天框接受/拒绝按钮
+disable-accept-deny-buttons: false
+#  是否关闭传送时的粒子
+disable-particles: false
+#  是否关闭移动检测(传送过程中移动是否打断传送) ("false" 打断, "true" 不打断)
+disable-move-system: false
+# 是否关闭传送时的音效
+disable-sound: false
+# 是否关闭非相同世界传送(当玩家与你不在同一世界时是否能够传送) ("false" 能传送, "true" 不能传送)
+disable-interdimensional-travel: false
+# 是否关闭传送后的短暂无敌状态
+disable-invincibility: false
+# 是否关闭记录进入/退出服务器时的位置(back)
+disable-back-on-quit: false
+
+## 时间相关设置(请填写整数, 单位均为秒)
+#无敌时间
+invincibility-seconds: 3
+#传送请求有效时间
+keep-alive: 60
+#延迟 X 秒后返回到上个位置
+delay-back-command: 3
+#延迟 X 秒后进行传送
+delay-teleportation: 3
+## 冷却设置(请填写整数, 单位均为秒)
+back-cooldown: 10
+tpa-cooldown: 10
+tpahere-cooldown: 10
+tpahereall-cooldown: 10
+#若要自定义冷却时间, 请为玩家添加权限: simpletpa.cooldown.Y.X
+# Y - 指令 ( back / tpa / tpahere / tpahereall )
+# X - 冷却时间 ( 单位为秒 )
+#举个栗子: simpletpa.cooldown.tpa.300 | simpletpa.cooldown.tpahere.300 | simpletpa.cooldown.tpahereall.300 | simpletpa.cooldown.back.300
+#意味着所有指令的冷却时间将设置为 300 秒
+
+
