@@ -5,7 +5,7 @@
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="11"
                     Text="如有疑问请在QQ群中咨询服主" />
         <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" Foreground="#8C7721"
-                    Text="会定期更新！" />
+                    Text="会定期更新！(最新版本为:1.0)" />
     </StackPanel>
 </local:MyCard>
 
