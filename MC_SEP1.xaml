@@ -1,0 +1,28 @@
+﻿<local:MyCard Title="关于" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="这是一个由serverDream配置专门用作MC-Sep的服务器的客户端" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="11"
+                    Text="如有疑问请在QQ群中咨询服主" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" Foreground="#8C7721"
+                    Text="会定期更新！" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="提示" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Text="建议不要修改该服务器客户端，除非你能保证不会出错" />
+        <local:MyHint Margin="0,8,0,2" IsWarn="False"
+                    Text="第一次启动会用点时间" />
+        <TextBlock TextWrapping="Wrap" Margin="0,6,0,0"
+                    Text="暂无，待更新" />
+    </StackPanel>
+</local:MyCard>
+<local:MyCard Title="快捷链接" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                    Text="Minecraft Wiki" EventType="打开网页" EventData="https://zh.minecraft.wiki/" />
+        <local:MyTextButton Margin="0,8,0,0" HorizontalAlignment="Center"
+                    Text="QQ群" EventType="打开网页" EventData="https://qm.qq.com/q/3mE5TCBpZ6" />
+    </StackPanel>
+</local:MyCard>
